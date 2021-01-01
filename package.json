@@ -10,7 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@bobbyecho/react-native-humanid": "0.1.1",
+    "@bobbyecho/react-native-humanid": "0.2.2",
     "react": "16.13.1",
     "react-native": "0.63.4",
     "react-native-device-info": "^7.3.1"
