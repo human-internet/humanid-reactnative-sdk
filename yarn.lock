@@ -607,11 +607,13 @@
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
 
-"@bobbyecho/react-native-humanid@0.2.2":
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/@bobbyecho/react-native-humanid/-/react-native-humanid-0.2.2.tgz#e519907be00c0486f63b765083829d26ae719ef2"
+"@bobbyecho/react-native-humanid@0.2.4":
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/@bobbyecho/react-native-humanid/-/react-native-humanid-0.2.4.tgz#14d25c922d3b8fff1d98b88af0370e8c855886c9"
+  integrity sha512-kGAVFwdSgpBKn4JB7QERtQxFT6uOu6k3GPN9P9eRm9Ldd24Ge9VRv3eC6jCgLnnHcRR2ECYihRj1i5XDHzN4cA==
   dependencies:
     google-libphonenumber "3.2.15"
+    react-native-iphone-x-helper "^1.3.1"
     react-native-modal "11.6.1"
 
 "@cnakazawa/watch@^1.0.3":
@@ -4815,6 +4817,11 @@ react-native-animatable@1.3.3:
 react-native-device-info@^7.3.1:
   version "7.3.1"
   resolved "https://registry.yarnpkg.com/react-native-device-info/-/react-native-device-info-7.3.1.tgz#6c4b0120d57872a2f7534332323306b386828a3d"
+
+react-native-iphone-x-helper@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
+  integrity sha512-HOf0jzRnq2/aFUcdCJ9w9JGzN3gdEg0zFE4FyYlp4jtidqU03D5X7ZegGKfT1EWteR0gPBGp9ye5T5FvSWi9Yg==
 
 react-native-modal@11.6.1:
   version "11.6.1"
