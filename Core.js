@@ -6,19 +6,21 @@ import {
   onSuccess,
   onError,
 } from '@bobbyecho/react-native-humanid';
+import toast from 'react-native-simple-toast';
 
 function Core() {
-  const loginHumanID = () => {
-    logIn();
-  };
+
+  const [token, setToken] = React.useState(null);
 
   React.useEffect(() => {
     onSuccess((exchangeToken) => {
       console.log('SUCCESS', exchangeToken);
+      setToken(exchangeToken)
     });
 
     onError((message) => {
-      console.log('ERROR', message);
+      toast.show(message, toast.SHORT)
+      console.log(message)
     });
 
     onCancel(() => {
@@ -26,13 +28,29 @@ function Core() {
     });
   }, []);
 
+  const loginHumanID = () => {
+    logIn();
+  };
+
+  const retry = () => {
+    setToken(null)
+  }
+
   return (
     <View style={styles.view}>
-      <TouchableOpacity onPress={loginHumanID} activeOpacity={0.7}>
-        <View style={styles.btn}>
-          <Text style={styles.text}>Login</Text>
-        </View>
-      </TouchableOpacity>
+      {!token && (
+          <TouchableOpacity onPress={loginHumanID} activeOpacity={0.7}>
+            <View style={styles.btn}>
+              <Text style={styles.text}>Login</Text>
+            </View>
+          </TouchableOpacity>
+      )}
+      {token && (
+          <View>
+            <Text style={styles.header}>{token}</Text>
+            <Text style={styles.retry} onPress={retry}>try again</Text>
+          </View>
+      )}
     </View>
   );
 }
@@ -50,6 +68,20 @@ const styles = StyleSheet.create({
     color: 'white',
     fontWeight: 'bold',
     fontSize: 17,
+  },
+  header: {
+    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: 17,
+    marginVertical: 20,
+    marginHorizontal: 20
+  },
+  retry: {
+    textAlign: 'center',
+    fontWeight: 'bold',
+    color: 'blue',
+    fontSize: 16,
+    textDecorationLine: 'underline'
   },
   view: {
     height: '100%',
