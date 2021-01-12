@@ -4,7 +4,7 @@
 
 import {AppRegistry} from 'react-native';
 import App from './App';
-import {configureHumanID} from '@bobbyecho/react-native-humanid';
+import {configureHumanID} from '@human-id/react-native-humanid';
 import {name as appName} from './app.json';
 import AppLogo from './AppLogo';
 

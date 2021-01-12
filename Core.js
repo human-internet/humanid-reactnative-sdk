@@ -5,7 +5,7 @@ import {
   onCancel,
   onSuccess,
   onError,
-} from '@bobbyecho/react-native-humanid';
+} from '@human-id/react-native-humanid';
 import toast from 'react-native-simple-toast';
 
 function Core() {
