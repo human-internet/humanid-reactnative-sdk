@@ -607,10 +607,10 @@
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
 
-"@bobbyecho/react-native-humanid@0.2.4":
-  version "0.2.4"
-  resolved "https://registry.yarnpkg.com/@bobbyecho/react-native-humanid/-/react-native-humanid-0.2.4.tgz#14d25c922d3b8fff1d98b88af0370e8c855886c9"
-  integrity sha512-kGAVFwdSgpBKn4JB7QERtQxFT6uOu6k3GPN9P9eRm9Ldd24Ge9VRv3eC6jCgLnnHcRR2ECYihRj1i5XDHzN4cA==
+"@bobbyecho/react-native-humanid@0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@bobbyecho/react-native-humanid/-/react-native-humanid-0.3.0.tgz#9d3ba9a3573f4b7f4de717bb85b4b6f4bef37883"
+  integrity sha512-gOUrurcvOZhBy3YX2sfJwiLhECVrDg35WsnGb3p47+ioYmLv84wQaMq7uhF+lf4dtzBO4FPurQ1pp8EgUFu0jA==
   dependencies:
     google-libphonenumber "3.2.15"
     react-native-iphone-x-helper "^1.3.1"
