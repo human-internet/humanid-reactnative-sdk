@@ -9,9 +9,9 @@ import {name as appName} from './app.json';
 import AppLogo from './AppLogo';
 
 configureHumanID({
-  appName: 'YOUR_APP_NAME',
-  clientSecret: 'CLIENT_SECRET',
-  clientId: 'CLIENT_ID',
+  appName: 'Test App',
+  clientSecret: '12FZ3llRg5KFDuJFLftOxlQof1DKBtgL7mZrY4AE1zaM78o1Fvza2IZdKjdxT45Q',
+  clientId: 'MOBILE_m65nshUmT9BDchwFEKdz',
   Icon: AppLogo,
 });
 

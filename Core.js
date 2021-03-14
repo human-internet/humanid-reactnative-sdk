@@ -13,19 +13,29 @@ function Core() {
   const [token, setToken] = React.useState(null);
 
   React.useEffect(() => {
-    onSuccess((exchangeToken) => {
+    const unsubscribeSuccess = () => onSuccess((exchangeToken) => {
       console.log('SUCCESS', exchangeToken);
       setToken(exchangeToken)
     });
 
-    onError((message) => {
+    const unsubscribeError = () => onError((message) => {
       toast.show(message, toast.SHORT)
-      console.log(message)
+      console.log(message);
     });
 
-    onCancel(() => {
+    const unsubscribeCancel = () => onCancel(() => {
       console.log('CANCEL');
     });
+
+    unsubscribeSuccess();
+    unsubscribeError();
+    unsubscribeCancel();
+
+    return () => {
+      unsubscribeSuccess();
+      unsubscribeError();
+      unsubscribeCancel();
+    }
   }, []);
 
   const loginHumanID = () => {
