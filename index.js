@@ -10,8 +10,8 @@ import AppLogo from './AppLogo';
 
 configureHumanID({
   appName: 'Test App',
-  clientSecret: '12FZ3llRg5KFDuJFLftOxlQof1DKBtgL7mZrY4AE1zaM78o1Fvza2IZdKjdxT45Q',
-  clientId: 'MOBILE_m65nshUmT9BDchwFEKdz',
+  clientSecret: 'CLIENT_SECRET',
+  clientId: 'CLIENT_ID',
   Icon: AppLogo,
 });
 
