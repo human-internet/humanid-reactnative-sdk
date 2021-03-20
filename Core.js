@@ -18,9 +18,8 @@ function Core() {
       setToken(exchangeToken)
     });
 
-    const unsubscribeError = () => onError((message) => {
-      toast.show(message, toast.SHORT)
-      console.log(message);
+    const unsubscribeError = () => onError(() => {
+      console.log('ERROR');
     });
 
     const unsubscribeCancel = () => onCancel(() => {
