@@ -6,7 +6,6 @@ import {
   onSuccess,
   onError,
 } from '@human-id/react-native-humanid';
-import toast from 'react-native-simple-toast';
 
 function Core() {
 
