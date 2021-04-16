@@ -26,6 +26,8 @@
 		0122B886E3B74B1C97195AB6 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8D96F69077B41158CC994A1 /* Roboto-Bold.ttf */; };
 		19E8D55E2C2E47CA9C2B7ED9 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F26FB4E299747C2BD2CDF7B /* Roboto-Light.ttf */; };
 		3A3DB362FFE144D284C5CA65 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F66F49BA29A4B23B76145C3 /* Roboto-Regular.ttf */; };
+		DCF7CF4C391B49C3B83F34CC /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FC37CCCFC274443BBF9A72D /* Montserrat-Medium.ttf */; };
+		D5F609B424C7406D8E31E390 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46B8583F018A479CBBCC3758 /* Montserrat-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		F8D96F69077B41158CC994A1 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; name = "Roboto-Bold.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Roboto-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		1F26FB4E299747C2BD2CDF7B /* Roboto-Light.ttf */ = {isa = PBXFileReference; name = "Roboto-Light.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Roboto-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		2F66F49BA29A4B23B76145C3 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; name = "Roboto-Regular.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Roboto-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3FC37CCCFC274443BBF9A72D /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; name = "Montserrat-Medium.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Montserrat-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		46B8583F018A479CBBCC3758 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; name = "Montserrat-Regular.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Montserrat-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +224,8 @@
 				F8D96F69077B41158CC994A1 /* Roboto-Bold.ttf */,
 				1F26FB4E299747C2BD2CDF7B /* Roboto-Light.ttf */,
 				2F66F49BA29A4B23B76145C3 /* Roboto-Regular.ttf */,
+				3FC37CCCFC274443BBF9A72D /* Montserrat-Medium.ttf */,
+				46B8583F018A479CBBCC3758 /* Montserrat-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -375,6 +381,8 @@
 				0122B886E3B74B1C97195AB6 /* Roboto-Bold.ttf in Resources */,
 				19E8D55E2C2E47CA9C2B7ED9 /* Roboto-Light.ttf in Resources */,
 				3A3DB362FFE144D284C5CA65 /* Roboto-Regular.ttf in Resources */,
+				DCF7CF4C391B49C3B83F34CC /* Montserrat-Medium.ttf in Resources */,
+				D5F609B424C7406D8E31E390 /* Montserrat-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
