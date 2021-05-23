@@ -8,26 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* humanid_exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* humanid_exampleTests.m */; };
+		0122B886E3B74B1C97195AB6 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8D96F69077B41158CC994A1 /* Roboto-Bold.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		19E8D55E2C2E47CA9C2B7ED9 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F26FB4E299747C2BD2CDF7B /* Roboto-Light.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* humanid_exampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* humanid_exampleTests.m */; };
+		3A3DB362FFE144D284C5CA65 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F66F49BA29A4B23B76145C3 /* Roboto-Regular.ttf */; };
 		3A725127375EC94A6F7914F6 /* libPods-humanid_example-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 085D1194FE48AE764C55280E /* libPods-humanid_example-tvOSTests.a */; };
+		6F9C35D68FBD40A28A0BA0E6 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8784629472BB4968A5D7363B /* Lato-Regular.ttf */; };
 		80D823AC1FB37983E226343C /* libPods-humanid_example-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A24CF9CB344598673FE5B35 /* libPods-humanid_example-tvOS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		882C964A91284767ADF91649 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40868EE53694489EAFE89625 /* Lato-Bold.ttf */; };
 		904E20AEE62BC7467DF58108 /* libPods-humanid_example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E456EF9C69B92B87D11DFAE /* libPods-humanid_example.a */; };
 		91EF1244BCC596A5383BF74B /* libPods-humanid_example-humanid_exampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CBD68D01365C4D8069BCA2A /* libPods-humanid_example-humanid_exampleTests.a */; };
-		882C964A91284767ADF91649 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40868EE53694489EAFE89625 /* Lato-Bold.ttf */; };
-		6F9C35D68FBD40A28A0BA0E6 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8784629472BB4968A5D7363B /* Lato-Regular.ttf */; };
-		97394E21554142E4B0AFA9D6 /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 37951ED6FE1248218E0C2A52 /* Lato-Thin.ttf */; };
-		0122B886E3B74B1C97195AB6 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F8D96F69077B41158CC994A1 /* Roboto-Bold.ttf */; };
-		19E8D55E2C2E47CA9C2B7ED9 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F26FB4E299747C2BD2CDF7B /* Roboto-Light.ttf */; };
-		3A3DB362FFE144D284C5CA65 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F66F49BA29A4B23B76145C3 /* Roboto-Regular.ttf */; };
-		DCF7CF4C391B49C3B83F34CC /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FC37CCCFC274443BBF9A72D /* Montserrat-Medium.ttf */; };
 		D5F609B424C7406D8E31E390 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46B8583F018A479CBBCC3758 /* Montserrat-Regular.ttf */; };
+		DCF7CF4C391B49C3B83F34CC /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FC37CCCFC274443BBF9A72D /* Montserrat-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,29 +59,28 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = humanid_example/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = humanid_example/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = humanid_example/main.m; sourceTree = "<group>"; };
+		1F26FB4E299747C2BD2CDF7B /* Roboto-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Light.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Roboto-Light.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* humanid_example-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "humanid_example-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* humanid_example-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "humanid_example-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F66F49BA29A4B23B76145C3 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Regular.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		36219D27C63A44A1D825DDA6 /* Pods-humanid_example-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-humanid_example-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-humanid_example-tvOSTests/Pods-humanid_example-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3A24CF9CB344598673FE5B35 /* libPods-humanid_example-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-humanid_example-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6C61171BB22FADF53E26C0 /* Pods-humanid_example-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-humanid_example-tvOS.release.xcconfig"; path = "Target Support Files/Pods-humanid_example-tvOS/Pods-humanid_example-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		3FC37CCCFC274443BBF9A72D /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Medium.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		40868EE53694489EAFE89625 /* Lato-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Bold.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		46B8583F018A479CBBCC3758 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Montserrat-Regular.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		4E456EF9C69B92B87D11DFAE /* libPods-humanid_example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-humanid_example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CBD68D01365C4D8069BCA2A /* libPods-humanid_example-humanid_exampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-humanid_example-humanid_exampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6123D669DAB7EB1F49C9D80B /* Pods-humanid_example-humanid_exampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-humanid_example-humanid_exampleTests.release.xcconfig"; path = "Target Support Files/Pods-humanid_example-humanid_exampleTests/Pods-humanid_example-humanid_exampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		67EB2CBB4BA999993970D5B4 /* Pods-humanid_example-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-humanid_example-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-humanid_example-tvOSTests/Pods-humanid_example-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = humanid_example/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8784629472BB4968A5D7363B /* Lato-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Lato-Regular.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Lato-Regular.ttf"; sourceTree = "<group>"; };
 		9BC95371F0FA02368365F243 /* Pods-humanid_example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-humanid_example.release.xcconfig"; path = "Target Support Files/Pods-humanid_example/Pods-humanid_example.release.xcconfig"; sourceTree = "<group>"; };
 		A6AAF92B31A8573CF4B78F3F /* Pods-humanid_example-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-humanid_example-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-humanid_example-tvOS/Pods-humanid_example-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		B20A1FC3DFD77AD7EB9418FB /* Pods-humanid_example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-humanid_example.debug.xcconfig"; path = "Target Support Files/Pods-humanid_example/Pods-humanid_example.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		40868EE53694489EAFE89625 /* Lato-Bold.ttf */ = {isa = PBXFileReference; name = "Lato-Bold.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Lato-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8784629472BB4968A5D7363B /* Lato-Regular.ttf */ = {isa = PBXFileReference; name = "Lato-Regular.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Lato-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		37951ED6FE1248218E0C2A52 /* Lato-Thin.ttf */ = {isa = PBXFileReference; name = "Lato-Thin.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Lato-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		F8D96F69077B41158CC994A1 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; name = "Roboto-Bold.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Roboto-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1F26FB4E299747C2BD2CDF7B /* Roboto-Light.ttf */ = {isa = PBXFileReference; name = "Roboto-Light.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Roboto-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2F66F49BA29A4B23B76145C3 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; name = "Roboto-Regular.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Roboto-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		3FC37CCCFC274443BBF9A72D /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; name = "Montserrat-Medium.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Montserrat-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		46B8583F018A479CBBCC3758 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; name = "Montserrat-Regular.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Montserrat-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F8D96F69077B41158CC994A1 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Roboto-Bold.ttf"; path = "../node_modules/@human-id/react-native-humanid/assets/font/Roboto-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +197,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		8E4B422CF432488A9F6EA461 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				40868EE53694489EAFE89625 /* Lato-Bold.ttf */,
+				8784629472BB4968A5D7363B /* Lato-Regular.ttf */,
+				F8D96F69077B41158CC994A1 /* Roboto-Bold.ttf */,
+				1F26FB4E299747C2BD2CDF7B /* Roboto-Light.ttf */,
+				2F66F49BA29A4B23B76145C3 /* Roboto-Regular.ttf */,
+				3FC37CCCFC274443BBF9A72D /* Montserrat-Medium.ttf */,
+				46B8583F018A479CBBCC3758 /* Montserrat-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		9FAC422C117A2FE42E792F80 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,25 +223,8 @@
 				36219D27C63A44A1D825DDA6 /* Pods-humanid_example-tvOSTests.debug.xcconfig */,
 				67EB2CBB4BA999993970D5B4 /* Pods-humanid_example-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		8E4B422CF432488A9F6EA461 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				40868EE53694489EAFE89625 /* Lato-Bold.ttf */,
-				8784629472BB4968A5D7363B /* Lato-Regular.ttf */,
-				37951ED6FE1248218E0C2A52 /* Lato-Thin.ttf */,
-				F8D96F69077B41158CC994A1 /* Roboto-Bold.ttf */,
-				1F26FB4E299747C2BD2CDF7B /* Roboto-Light.ttf */,
-				2F66F49BA29A4B23B76145C3 /* Roboto-Regular.ttf */,
-				3FC37CCCFC274443BBF9A72D /* Montserrat-Medium.ttf */,
-				46B8583F018A479CBBCC3758 /* Montserrat-Regular.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 
@@ -327,6 +322,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = MNE97S4U55;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -377,7 +373,6 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				882C964A91284767ADF91649 /* Lato-Bold.ttf in Resources */,
 				6F9C35D68FBD40A28A0BA0E6 /* Lato-Regular.ttf in Resources */,
-				97394E21554142E4B0AFA9D6 /* Lato-Thin.ttf in Resources */,
 				0122B886E3B74B1C97195AB6 /* Roboto-Bold.ttf in Resources */,
 				19E8D55E2C2E47CA9C2B7ED9 /* Roboto-Light.ttf in Resources */,
 				3A3DB362FFE144D284C5CA65 /* Roboto-Regular.ttf in Resources */,
@@ -697,6 +692,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MNE97S4U55;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = humanid_example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -720,6 +716,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MNE97S4U55;
 				INFOPLIST_FILE = humanid_example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -891,7 +888,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
@@ -944,7 +941,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
 				LIBRARY_SEARCH_PATHS = (
 					"\"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)\"",
