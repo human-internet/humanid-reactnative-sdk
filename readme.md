@@ -1,5 +1,5 @@
 <p align="center">  
-  <img src="https://github.com/bluenumberfoundation/humanid-reactnative-sdk/blob/main/human-id-logo.png" width="200" height="200">  
+  <img src="https://github.com/human-internet/humanid-reactnative-sdk/blob/main/human-id-logo.png" width="200" height="200">  
 </p>  
   
 <h1 align="center">HumanID React Native</h1>  
@@ -14,10 +14,10 @@
 </p>  
   
 <p align="center">  
-<a href="https://github.com/bluenumberfoundation/humanid-documentation/edit/master/README.md">General Documentation</a> •  
-<a href="https://github.com/bluenumberfoundation/humanid-documentation/blob/master/contributing.md">Contributing</a> •   
-<a href="https://github.com/bluenumberfoundation/humanid-documentation/blob/master/gallery.md">Gallery</a> •   
-<a href="https://github.com/bluenumberfoundation/humanid-documentation/blob/master/faq.md">FAQ</a>  
+<a href="https://github.com/human-internet/humanid-documentation/edit/master/README.md">General Documentation</a> •  
+<a href="https://github.com/human-internet/humanid-documentation/blob/master/contributing.md">Contributing</a> •   
+<a href="https://github.com/human-internet/humanid-documentation/blob/master/gallery.md">Gallery</a> •   
+<a href="https://github.com/human-internet/humanid-documentation/blob/master/faq.md">FAQ</a>  
 </p>  
   
 <p align="center">  
@@ -47,7 +47,7 @@ npx react-native link
   
 ## Credentials Access  
   
-Get the appId and appSecret by dropping us an email [developers@human-id.org](mailto:developers@human-id.org).  
+Sign up and create an app at our [developer conosole](https://developers.human-id.org)
   
 ## Configuration  
 at your index.js file  
@@ -136,7 +136,7 @@ export default HomeScreen;
 ```  
 
 ## You're set!
-Now you can integrate your React Native app to humanID. See the full [sample](https://github.com/bluenumberfoundation/humanid-reactnative-sdk/tree/example) here to learn more.
+Now you can integrate your React Native app to humanID. See the full [sample](https://github.com/human-internet/humanid-reactnative-sdk/tree/example) here to learn more.
 
 ## License
 Copyright 2019-2020 Bluenumber Foundation Licensed under the GNU General Public License v3.0
