@@ -1,8 +1,7 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
 import {View, Platform} from 'react-native';
 import Modal from 'react-native-modal';
 import styles from './styles';
-import ModalLoading from './ModalLoading';
 import {Context} from '../../core/Context';
 import WebView from 'react-native-webview';
 import {
@@ -26,8 +25,6 @@ function WebLogin(): JSX.Element {
     resetReducer();
     clearState();
   };
-
-  const [isLoading, setLoading] = useState(true);
 
   const handleEventFromWebLogin = (url: string) => {
     console.debug(url);
@@ -59,17 +56,15 @@ function WebLogin(): JSX.Element {
         coverScreen={true}>
         <View style={styles.container}>
           <WebView
-            source={{uri: webLoginUrl}}
-            onLoadStart={() => {
-              setLoading(true);
-            }}
-            onLoadEnd={syntheticEvent => {
-              const {nativeEvent} = syntheticEvent;
-              handleEventFromWebLogin(nativeEvent.url);
-              setLoading(false);
-            }}
+              style={ {flex: 1}}
+              source={{uri: webLoginUrl}}
+              onLoadStart={() => {
+              }}
+              onLoadEnd={syntheticEvent => {
+                const {nativeEvent} = syntheticEvent;
+                handleEventFromWebLogin(nativeEvent.url);
+              }}
           />
-          <ModalLoading visible={isLoading} />
         </View>
       </Modal>
     </>

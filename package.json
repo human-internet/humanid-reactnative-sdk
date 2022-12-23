@@ -1,6 +1,6 @@
 {
-  "name": "@human-id/react-native-humanid",
-  "version": "2.3.2",
+  "name": "@human-internet/react-native-humanid",
+  "version": "2.4.2",
   "description": "HumanID for react-native",
   "license": "SEE LICENSE IN LISENCE",
   "private": false,
