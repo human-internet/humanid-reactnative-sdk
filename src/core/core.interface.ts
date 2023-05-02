@@ -1,3 +1,5 @@
+import React from 'react';
+
 import {FlagType} from '../modules/Login/Login.interface';
 
 export interface UseGlobalState {
@@ -12,7 +14,6 @@ export interface UseGlobalState {
   clearState: () => void;
 }
 
-import React from 'react';
 
 export interface ConfigureParams {
   appName: string;
@@ -60,3 +61,5 @@ export type IOnCancel = (callback: onCancelCallback) => void;
 export type IOnError = (callback: onErrorCallback) => void;
 
 export type IOnSuccess = (callback: onSuccessCallback) => void;
+
+export type IUnsubscribeAllEventListener = () => void;
