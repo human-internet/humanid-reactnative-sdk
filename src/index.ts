@@ -1,7 +1,3 @@
-import HumanIDProvider from './core/Provider';
-import Toast from './modules/Toast'
-import options from './core/options';
-import {EventRegister, ON_CANCEL, ON_ERROR, ON_SUCCESS} from './core/eventManager';
 import {
   IConfigureHumanID,
   ILogIn,
@@ -10,6 +6,10 @@ import {
   IOnSuccess,
   IUnsubscribeAllEventListener
 } from './core/core.interface';
+import {EventRegister, ON_CANCEL, ON_ERROR, ON_SUCCESS} from './core/eventManager';
+import options from './core/options';
+import HumanIDProvider from './core/Provider';
+import Toast from './modules/Toast'
 
 const configureHumanID: IConfigureHumanID = (params) => {
   const {appName, clientId, clientSecret, Icon = null} = params;

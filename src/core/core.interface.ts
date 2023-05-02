@@ -1,5 +1,3 @@
-import React from 'react';
-
 import {FlagType} from '../modules/Login/Login.interface';
 
 export interface UseGlobalState {
@@ -14,6 +12,7 @@ export interface UseGlobalState {
   clearState: () => void;
 }
 
+import React from 'react';
 
 export interface ConfigureParams {
   appName: string;
