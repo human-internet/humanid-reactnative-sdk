@@ -8,11 +8,17 @@ function useGlobalState(): UseGlobalState {
   const [countryCode, handleCountryCode] = React.useState<FlagType>('us');
   const [loginVisible, handleLoginVisible] = React.useState(false);
   const [loginOTPVisible, handleLoginOTPVisible] = React.useState(false);
+  const [webLoginModalVisible, handleWebLoginVisible] = React.useState(false);
+  const [webLoginUrl, setWebLoginUrl] = React.useState('');
 
   const clearState = () => {
     setTimeout(() => {
       handleLoginVisible(false);
       handlePhoneNumber('');
+      handleWebLoginVisible(false);
+      setWebLoginUrl('');
+      handleWebLoginVisible(false)
+      setWebLoginUrl('')
     }, 0);
 
     setTimeout(() => {
@@ -37,6 +43,14 @@ function useGlobalState(): UseGlobalState {
     handleLoginOTPVisible(visible);
   };
 
+  const setWebLoginModalVisible = (visible: boolean) => {
+    handleWebLoginVisible(visible);
+  };
+
+  const setWebLoginUrlToView = (url: string) => {
+    setWebLoginUrl(url);
+  };
+
   return {
     phoneNumber,
     setPhoneNumber,
@@ -46,6 +60,10 @@ function useGlobalState(): UseGlobalState {
     setLoginVisible,
     loginOTPVisible,
     setLoginOTPVisible,
+    webLoginModalVisible,
+    setWebLoginModalVisible,
+    webLoginUrl,
+    setWebLoginUrlToView,
     clearState,
   };
 }
