@@ -3,7 +3,8 @@ import {
   ILogIn,
   IOnCancel,
   IOnError,
-  IOnSuccess
+  IOnSuccess,
+  IUnsubscribeAllEventListener
 } from './core/core.interface';
 import {EventRegister, ON_CANCEL, ON_ERROR, ON_SUCCESS} from './core/eventManager';
 import options from './core/options';
@@ -53,11 +54,16 @@ const onError: IOnError = (callback) => {
   });
 };
 
+const unsubscribeAllEventListener: IUnsubscribeAllEventListener = () => {
+  EventRegister.removeAllListeners();
+}
+
 export {
   configureHumanID,
   logIn,
   onError,
   onSuccess,
   onCancel,
+  unsubscribeAllEventListener,
   HumanIDProvider
 };

@@ -60,3 +60,5 @@ export type IOnCancel = (callback: onCancelCallback) => void;
 export type IOnError = (callback: onErrorCallback) => void;
 
 export type IOnSuccess = (callback: onSuccessCallback) => void;
+
+export type IUnsubscribeAllEventListener = () => void;
