@@ -124,7 +124,6 @@ const MainComponent: IMainComponent = (_props, ref): React.ReactElement => {
             source={{ uri: "https://web-login.human-id.org/login" }}
             onLoad={() => {
               setInitLoad(true);
-              console.log(`RENDERED DUMMY WEBVIEW`);
             }}
           />
         </View>
