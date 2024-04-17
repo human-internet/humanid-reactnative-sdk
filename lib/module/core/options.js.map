@@ -1,0 +1,1 @@
+{"version":3,"sources":["options.ts"],"names":["options","clientSecret","clientId"],"mappings":"AAEA,MAAMA,OAAgB,GAAG;AACvBC,EAAAA,YAAY,EAAE,EADS;AAEvBC,EAAAA,QAAQ,EAAE;AAFa,CAAzB;AAKA,eAAeF,OAAf","sourcesContent":["import {Options} from './core.interface';\n\nconst options: Options = {\n  clientSecret: '',\n  clientId: '',\n};\n\nexport default options;\n"]}

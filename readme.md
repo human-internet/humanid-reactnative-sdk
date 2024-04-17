@@ -33,11 +33,11 @@ Meet humanID - An anonymous online identity, enabling platforms to offer the spe
 ## Installation  
 ##### Yarn  
 ```
-yarn add @human-id/react-native-humanid react-native-device-info  
+yarn add @human-internet/react-native-humanid react-native-device-info  
 ```  
 ##### npm  
 ```  
-npm i @human-id/react-native-humanid react-native-device-info  
+npm i @human-internet/react-native-humanid react-native-device-info  
 ```
 
 ##### linking assets (IMPORTANT)
@@ -53,7 +53,7 @@ Sign up and create an app at our [developer conosole](https://developers.human-i
 at your index.js file  
   
 ```js
-import {configureHumanID} from "@human-id/react-native-humanid";  
+import {configureHumanID} from "@human-internet/react-native-humanid";  
 import AppLogo from "path/your-app-logo";
   
 configureHumanID({  
@@ -71,7 +71,7 @@ AppRegistry.registerComponent(appName, () => App);
 #### Register humanID Provider at your Top Container Application
 
 ```js
-import {HumanIDProvider} from "@human-id/react-native-humanid";
+import {HumanIDProvider} from "@human-internet/react-native-humanid";
   
 const App = () => {
     return (
@@ -87,7 +87,7 @@ export default App;
 #### Login  
   
 ```js
-import {logIn} from "@human-id/react-native-humanid";
+import {logIn} from "@human-internet/react-native-humanid";
   
 const HomeScreen = () => {  
     const handleLogin = () => {
@@ -104,7 +104,7 @@ export default HomeScreen;
 We suggest put this method into lifecycle that only live once on your screen, example: <b>componentDidMount</b> if you use class component, otherwise you can use <b>useEffect</b>  
   
 ```js
-import {onCancel, onSuccess, onError} from "@human-id/react-native-humanid";  
+import {onCancel, onSuccess, onError} from "@human-internet/react-native-humanid";  
   
 const HomeScreen = () => {  
     React.useEffect(() => {

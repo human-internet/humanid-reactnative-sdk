@@ -1,19 +1,17 @@
 import {StyleSheet, Platform} from 'react-native';
 import {isIphoneX} from 'react-native-iphone-x-helper';
-import {colors, globalStyles, metrics, fonts} from '../../themes';
+import {colors, globalStyles, metrics} from '../../themes';
 import {RFValue, RFPercentage} from '../../helpers';
 
 const styles = StyleSheet.create({
   appNameBold: {
     marginTop: RFValue(22),
     marginBottom: RFValue(2.5),
-    fontFamily: fonts.latoBold,
     fontSize: 18,
     color: colors.gray,
     textAlign: 'center',
   },
   appNameRegular: {
-    fontFamily: fonts.latoRegular,
     fontSize: 18,
     color: colors.gray,
     textAlign: 'center',
@@ -56,7 +54,6 @@ const styles = StyleSheet.create({
     ...isIphoneX() && { marginTop: 25 }
   },
   desc: {
-    fontFamily: fonts.montserratRegular,
     fontSize: 13,
     color: colors.gray,
     alignSelf: 'center'
@@ -65,7 +62,6 @@ const styles = StyleSheet.create({
     marginVertical: 10
   },
   termsText: {
-    fontFamily: fonts.montserratRegular,
     fontSize: 12,
     color: colors.primaryLight
   },
@@ -99,17 +95,14 @@ const styles = StyleSheet.create({
     borderBottomColor: colors.borderLine,
     paddingHorizontal: 10,
     textAlign: 'center',
-    fontFamily: fonts.latoRegular
   },
   phoneOnTyping: {
-    fontFamily: fonts.latoRegular,
     fontSize: 14,
     color: colors.gray
   },
   placeholder: {
     color: colors.placeholder,
     fontSize: 14,
-    fontFamily: fonts.latoRegular
   },
   btnContainer: {
     height: 35,
@@ -129,13 +122,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   btnEnterText: {
-    fontFamily: fonts.latoRegular,
     fontSize: 12,
     textTransform: 'uppercase',
     color: colors.white
   },
   btnEnterTextDisabled: {
-    fontFamily: fonts.latoRegular,
     fontSize: 12,
     textTransform: 'uppercase',
     color: colors.borderLine
@@ -155,14 +146,12 @@ const styles = StyleSheet.create({
     height: 14
   },
   countryText: {
-    fontFamily: fonts.latoRegular,
     fontSize: 14,
     flex: 1,
     textAlign: 'center',
     paddingHorizontal: 20
   },
   countryCodeText: {
-    fontFamily: fonts.latoBold,
     fontSize: 14,
     color: colors.gray
   },
@@ -178,7 +167,6 @@ const styles = StyleSheet.create({
     backgroundColor: colors.graySmooth
   },
   placeholderCountryCode: {
-    fontFamily: fonts.bold,
     fontSize: 14,
     color: colors.gray,
     marginLeft: 5

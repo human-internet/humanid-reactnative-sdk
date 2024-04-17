@@ -9,23 +9,23 @@ export interface UseGlobalState {
   setLoginVisible: (visible: boolean) => void;
   loginOTPVisible: boolean;
   setLoginOTPVisible: (visible: boolean) => void;
+  webLoginModalVisible: boolean;
+  setWebLoginModalVisible: (visible: boolean) => void;
+  webLoginUrl: string;
+  setWebLoginUrlToView: (url: string) => void;
   clearState: () => void;
 }
 
 import React from 'react';
 
 export interface ConfigureParams {
-  appName: string;
   clientId: string;
   clientSecret: string;
-  Icon: JSX.Element | null;
 }
 
 export interface Options {
-  appName: string;
   clientId: string;
   clientSecret: string;
-  Icon: JSX.Element | null;
 }
 
 type onCancelCallback = () => void;
@@ -60,3 +60,5 @@ export type IOnCancel = (callback: onCancelCallback) => void;
 export type IOnError = (callback: onErrorCallback) => void;
 
 export type IOnSuccess = (callback: onSuccessCallback) => void;
+
+export type IUnsubscribeAllEventListener = () => void;
