@@ -55,7 +55,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bluenumberfoundation/humanid-reactnative-sdk.git"
+    "url": "git+https://github.com/human-internet/humanid-reactnative-sdk.git"
   },
   "author": {
     "name": "bluenumberfoundation",
@@ -66,9 +66,9 @@
     "Bobby Echo (https://github.com/bobbyecho)"
   ],
   "bugs": {
-    "url": "https://github.com/bluenumberfoundation/humanid-reactnative-sdk/issues"
+    "url": "https://github.com/human-internet/humanid-reactnative-sdk/issues"
   },
-  "homepage": "https://github.com/bluenumberfoundation/humanid-reactnative-sdk#readme",
+  "homepage": "https://github.com/human-internet/humanid-reactnative-sdk#readme",
   "devDependencies": {
     "@release-it/conventional-changelog": "2.0.0",
     "@types/react": "17.0.0",
