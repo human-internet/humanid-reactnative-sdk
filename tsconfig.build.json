@@ -1,4 +1,0 @@
-{
-  "extends": "./tsconfig",
-  "exclude": ["./human-id-logo.png"]
-}

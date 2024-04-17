@@ -1,5 +1,5 @@
 import {StyleSheet, Platform} from 'react-native';
-import {colors, globalStyles, metrics, fonts} from '../../themes';
+import {colors, globalStyles, metrics} from '../../themes';
 import {RFPercentage, RFValue} from '../../helpers';
 
 const styles = StyleSheet.create({
@@ -13,26 +13,22 @@ const styles = StyleSheet.create({
     height: metrics.screenHeight - 78
   },
   title: {
-    fontFamily: fonts.latoBold,
     fontSize: 18,
     textAlign: 'center',
     color: colors.gray
   },
   description: {
-    fontFamily: fonts.montserratRegular,
     fontSize: 14,
     textAlign: 'center',
     color: colors.gray,
     paddingHorizontal: 25
   },
   descriptionBottom: {
-    fontFamily: fonts.montserratRegular,
     fontSize: 14,
     textAlign: 'center',
     color: colors.gray
   },
   phoneNumber: {
-    fontFamily: fonts.montserratMedium,
     color: colors.primary,
     textAlign: 'center',
     marginTop: 1.5
@@ -44,7 +40,6 @@ const styles = StyleSheet.create({
     marginBottom: 21
   },
   resendCode: {
-    fontFamily: fonts.montserratRegular,
     fontSize: 14,
     marginTop: RFValue(27.5),
     color: colors.primary,

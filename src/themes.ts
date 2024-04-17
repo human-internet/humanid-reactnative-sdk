@@ -2,16 +2,6 @@ import {Dimensions} from 'react-native';
 import {RFValue} from './helpers';
 const {width, height} = Dimensions.get('window');
 
-const fonts = {
-  base: 'Roboto-Regular',
-  bold: 'Roboto-Bold',
-  thin: 'Roboto-Light',
-  latoRegular: 'Lato-Regular',
-  latoBold: 'Lato-Bold',
-  montserratRegular: 'Montserrat-Regular',
-  montserratMedium: 'Montserrat-Medium',
-};
-
 const colors = {
   primary: '#075070',
   primaryLight: '#023B60',
@@ -299,40 +289,33 @@ const globalStyles = {
   },
   headerTitle: {
     fontSize: RFValue(17),
-    fontFamily: fonts.latoRegular
   },
   title: {
     fontSize: RFValue(15),
-    fontFamily: fonts.bold,
     letterSpacing: 1,
     lineHeight: 18
   },
   otpText: {
     fontSize: RFValue(18),
-    fontFamily: fonts.latoBold
   },
   normal: {
     fontSize: RFValue(14),
-    fontFamily: fonts.latoRegular
   },
   normalBold: {
     fontSize: RFValue(14),
-    fontFamily: fonts.bold,
     letterSpacing: 1,
     lineHeight: 18
   },
   description: {
     fontSize: RFValue(12),
-    fontFamily: fonts.base,
     letterSpacing: 1,
     lineHeight: 18
   },
   descriptionBold: {
     fontSize: RFValue(12),
-    fontFamily: fonts.bold,
     letterSpacing: 1,
     lineHeight: 18
   }
 };
 
-export {colors, images, globalStyles, metrics, flags, fonts};
+export {colors, images, globalStyles, metrics, flags};

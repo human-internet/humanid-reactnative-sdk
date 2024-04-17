@@ -4,7 +4,9 @@ const rootState: State = {
   loginFetching: false,
   loginPayload: null,
   loginOTPFetching: false,
-  loginOTPPayload: null
+  loginOTPPayload: null,
+  webLoginFetching: false,
+  webLoginPayload: null,
 };
 
 export default rootState;

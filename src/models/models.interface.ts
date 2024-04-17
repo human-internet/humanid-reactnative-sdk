@@ -5,6 +5,8 @@ export interface State {
   loginFetching: boolean;
   loginOTPPayload: NetworkResponse<LoginOTPResponse> | null;
   loginOTPFetching: boolean;
+  webLoginPayload: NetworkResponse<WebLoginResponse> | null;
+  webLoginFetching: boolean;
 }
 
 export type ActionMap<M extends {[index: string]: any}> = {
@@ -38,8 +40,6 @@ export type ResetActionType = {
 
 export type ResetAction = ActionMap<ResetActionType>[keyof ActionMap<ResetActionType>];
 
-export type Action = LoginOTPAction | LoginAction | ResetAction;
-
 export interface LoginRequest {
   countryCode: string;
   phone: string;
@@ -70,3 +70,21 @@ export interface LoginOTPResponse {
     otpCodeLength: number;
   };
 }
+
+export type WebLoginActionType = {
+  WEB_LOGIN_REQUEST: undefined;
+  WEB_LOGIN_CALLBACK: NetworkResponse<WebLoginResponse>;
+};
+
+export type WebLoginAction =
+    ActionMap<WebLoginActionType>[keyof ActionMap<WebLoginActionType>];
+
+export interface WebLoginRequest {
+  lang: string;
+}
+
+export interface WebLoginResponse {
+  webLoginURL: string;
+}
+
+export type Action = LoginOTPAction | LoginAction | ResetAction | WebLoginAction;
