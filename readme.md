@@ -5,8 +5,8 @@
 <h1 align="center">HumanID React Native</h1>  
   
 <p align="center">  
-  <a href="https://badge.fury.io/js/%40human-id%2Freact-native-humanid">
-    <img src="https://badge.fury.io/js/%40human-id%2Freact-native-humanid.svg" alt="npm version" />
+  <a href="https://badge.fury.io/js/%40human-internet%2Freact-native-humanid">
+    <img src="https://badge.fury.io/js/%40human-internet%2Freact-native-humanid.svg" alt="npm version" />
   </a>
   <a href="https://github.com/bluenumberfoundation/humanid-reactnative-sdk/blob/main/LICENSE">  
     <img src="https://img.shields.io/badge/License-GPL%20v3-blue.svg" alt="license" />  
