@@ -1,5 +1,5 @@
 import React, { useContext, useRef, useState } from "react";
-import { View, Modal, Alert } from "react-native";
+import { View, Modal } from "react-native";
 import styles from "./styles";
 import ModalLoading from "./ModalLoading";
 import { Context } from "../../core/Context";
@@ -18,24 +18,8 @@ function WebLogin(): JSX.Element {
     clearState,
     resetReducer,
     webLoginUrl,
-    webLoginRequest,
   } = useContext(Context);
   const webViewRef = useRef(null);
-  const onLoad = () => {
-    // Calculate the time taken to load
-    const endTime = Date.now();
-    const loadTime = endTime - startTime;
-    Alert.alert("webview loaded successfully", `load time is ${loadTime} ms`, [
-      {
-        text: "Cancel",
-        onPress: () => console.log("Cancel Pressed"),
-        style: "cancel",
-      },
-      { text: "OK", onPress: () => console.log("OK Pressed") },
-    ]);
-  };
-  // Record the start time when the component mounts
-  const startTime = Date.now();
   const handleOnCancel = () => {
     EventRegister.emitEvent(ON_CANCEL, true);
     resetReducer();
@@ -87,7 +71,6 @@ function WebLogin(): JSX.Element {
               handleEventFromWebLogin(nativeEvent.url);
               setLoading(false);
             }}
-            onLoad={onLoad}
           />
           <ModalLoading visible={isLoading} />
         </View>
