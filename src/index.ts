@@ -12,12 +12,10 @@ import HumanIDProvider from './core/Provider';
 import Toast from './modules/Toast'
 
 const configureHumanID: IConfigureHumanID = (params) => {
-  const {appName, clientId, clientSecret, Icon = null} = params;
+  const {clientId, clientSecret} = params;
 
-  options.appName = appName;
   options.clientId = clientId;
   options.clientSecret = clientSecret;
-  options.Icon = Icon;
 };
 
 const logIn: ILogIn = () => {
@@ -54,9 +52,9 @@ const onError: IOnError = (callback) => {
   });
 };
 
-const unsubscribeAllEventListener: IUnsubscribeAllEventListener = () => {
+const unsubscribeAllEventListeners: IUnsubscribeAllEventListener = () => {
   EventRegister.removeAllListeners();
-}
+};
 
 export {
   configureHumanID,
@@ -64,6 +62,6 @@ export {
   onError,
   onSuccess,
   onCancel,
-  unsubscribeAllEventListener,
+  unsubscribeAllEventListeners,
   HumanIDProvider
 };

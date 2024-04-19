@@ -1,5 +1,11 @@
 /* eslint-disable prettier/prettier */
-import {LoginOTPRequest, LoginResponse, LoginRequest, LoginOTPResponse} from '../models/models.interface';
+import {
+  LoginOTPRequest,
+  LoginResponse,
+  LoginRequest,
+  LoginOTPResponse,
+  WebLoginRequest, WebLoginResponse
+} from '../models/models.interface';
 import {NetworkResponse} from './network.interface';
 import xhr from './xhr';
 import {EventRegister, ON_ERROR} from '../core/eventManager';
@@ -52,3 +58,21 @@ export async function postLogin(
     return defaultError((catchErrorMessage(e)));
   }
 }
+
+
+export async function postWebLogin(
+    params: WebLoginRequest,
+): Promise<NetworkResponse<WebLoginResponse>> {
+  try {
+    const response = await xhr<WebLoginRequest, WebLoginResponse>(
+        '/users/web-login',
+        params,
+    );
+
+    return {...response};
+  } catch (e) {
+    EventRegister.emitEvent(ON_ERROR, catchErrorMessage(e));
+    return defaultError(catchErrorMessage(e));
+  }
+}
+
