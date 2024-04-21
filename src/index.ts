@@ -52,7 +52,7 @@ const onError: IOnError = (callback) => {
   });
 };
 
-const unsubscribeAllEventListener: IUnsubscribeAllEventListener = () => {
+const unsubscribeAllEventListeners: IUnsubscribeAllEventListener = () => {
   EventRegister.removeAllListeners();
 };
 
@@ -62,6 +62,6 @@ export {
   onError,
   onSuccess,
   onCancel,
-  unsubscribeAllEventListener,
+  unsubscribeAllEventListeners,
   HumanIDProvider
 };
