@@ -21,7 +21,7 @@ function ModalSuccessfulLogin(props: ModalSuccessfulLoginProps): JSX.Element {
         <ActivityIndicator size="large" color={colors.black} />
         <Text
           style={styles.textLoading}
-        >{`Verification successful.\nDeleting your data.`}</Text>
+        >{`Verification successful.\nRemoving all of your personal information.`}</Text>
       </View>
     </Modal>
   );
