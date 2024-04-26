@@ -1,9 +1,11 @@
-import React, { useContext, useRef, useState } from "react";
-import { View, Modal } from "react-native";
-import styles from "./styles";
-import ModalLoading from "./ModalLoading";
-import { Context } from "../../core/Context";
 import WebView from "react-native-webview";
+import React, { useContext, useRef, useState } from "react";
+import { Modal, View } from "react-native";
+
+import ModalLoading from "./ModalLoading";
+import ModalSuccessfulLogin from "./ModalSuccessfulLogin";
+import styles from "./styles";
+import { Context } from "../../core/Context";
 import {
   EventRegister,
   ON_CANCEL,
@@ -27,6 +29,7 @@ function WebLogin(): JSX.Element {
   };
 
   const [isLoading, setLoading] = useState(true);
+  const [isModalSuccessfulLoginVisible, setIsModalSuccessfulLoginVisible] = useState(false);
 
   const handleEventFromWebLogin = (url: string) => {
     if (url.includes("/error")) {
@@ -36,7 +39,9 @@ function WebLogin(): JSX.Element {
     if (url.includes("/success")) {
       let exchangeToken = url.split("et=")[1];
       EventRegister.emitEvent(ON_SUCCESS, exchangeToken);
+      setIsModalSuccessfulLoginVisible(false)
       setWebLoginModalVisible(false);
+      setLoading(true)
     }
     if (url.includes("code=500")) {
       EventRegister.emitEvent(ON_ERROR, url);
@@ -46,7 +51,21 @@ function WebLogin(): JSX.Element {
       EventRegister.emitEvent(ON_CANCEL, "");
       setWebLoginModalVisible(false);
     }
+    if(url.includes("redirect_app")) {
+      setTimeout(() => {
+        setIsModalSuccessfulLoginVisible(false);
+      }, 500)
+    }
   };
+
+  const handleLoadStartEvent = (url: string) => {
+    if(url?.includes('redirect_app')) {
+      setIsModalSuccessfulLoginVisible(true)
+    }
+    if(url?.includes('login?t=')) {
+      setLoading(true)
+    }
+  }
 
   return (
     <>
@@ -63,8 +82,9 @@ function WebLogin(): JSX.Element {
             source={{
               uri: webLoginUrl,
             }}
-            onLoadStart={() => {
-              setLoading(true);
+            onLoadStart={(syntheticEvent) => {
+              const { nativeEvent } = syntheticEvent
+              handleLoadStartEvent(nativeEvent?.url);              
             }}
             onLoadEnd={(syntheticEvent) => {
               const { nativeEvent } = syntheticEvent;
@@ -73,6 +93,7 @@ function WebLogin(): JSX.Element {
             }}
           />
           <ModalLoading visible={isLoading} />
+          <ModalSuccessfulLogin visible={isModalSuccessfulLoginVisible} />
         </View>
       </Modal>
     </>
