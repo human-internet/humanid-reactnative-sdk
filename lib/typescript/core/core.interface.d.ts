@@ -28,6 +28,7 @@ declare type onErrorCallback = () => void;
 declare type onSuccessCallback = (exchangeToken: string) => void;
 export interface MainComponentRef {
     logIn: () => void;
+    handleDeepLink: IHandleDeepLink;
 }
 export interface MainComponentProps {
     ref: (ref: MainComponentRef) => void;
@@ -37,6 +38,7 @@ export declare type IHumanIDProvider = React.FunctionComponent & {
     ref: MainComponentRef | null;
 };
 export declare type IConfigureHumanID = (options: ConfigureParams) => void;
+export declare type IHandleDeepLink = (deepLink: string, onSuccess: onSuccessCallback, onError: onErrorWithMessageCallback) => void;
 export declare type ILogIn = () => void;
 export declare type IOnCancel = (callback: onCancelCallback) => void;
 export declare type IOnError = (callback: onErrorCallback) => void;

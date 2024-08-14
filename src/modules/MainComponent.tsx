@@ -1,23 +1,26 @@
+import WebView from "react-native-webview";
 import React, { useReducer, useState } from "react";
-import { Context } from "../core/Context";
-import { checkClient } from "../helpers";
-import useGlobalState from "../core/useGlobalState";
+import { View } from "react-native";
+
+import Toast from "../modules/Toast";
+import WebLogin from "./WebLogin";
+import options from "../core/options";
 import rootReducer from "../models/rootReducer";
 import rootState from "../models/rootState";
+import useGlobalState from "../core/useGlobalState";
+import { Context } from "../core/Context";
+import { EventRegister, ON_ERROR } from "../core/eventManager";
+import { HUMAN_ID_DEEPLINK_ERROR_PREFIX, HUMAN_ID_DEEPLINK_EXCHANGE_TOKEN_PREFIX, HUMAN_ID_DEEPLINK_PREFIX, SUCCESFUL_LOGIN_MESSAGE, UNKNOWN_ERROR_MESSAGE } from "../string/label";
+import { IHandleDeepLink, IMainComponent } from "../core/core.interface";
 import {
   LoginOTPRequest,
   LoginRequest,
   WebLoginRequest,
 } from "../models/models.interface";
+import { checkClient } from "../helpers";
 import { loginAction } from "../models/loginModel";
 import { loginOTPAction } from "../models/loginOTPModel";
-import { IMainComponent } from "../core/core.interface";
 import { webLoginAction } from "../models/webLoginModel";
-import WebLogin from "./WebLogin";
-import { EventRegister, ON_ERROR } from "../core/eventManager";
-import options from "../core/options";
-import WebView from "react-native-webview";
-import { View } from "react-native";
 
 const MainComponent: IMainComponent = (_props, ref): React.ReactElement => {
   checkClient();
@@ -86,11 +89,43 @@ const MainComponent: IMainComponent = (_props, ref): React.ReactElement => {
     });
   };
 
+  const closeWebLogin = () => {
+    setWebLoginModalVisible(false);
+  };
+
+  const handleDeepLink: IHandleDeepLink = (deepLink, onSuccess, onError = () => {}) => {
+    if(!deepLink?.includes(`${HUMAN_ID_DEEPLINK_PREFIX}${options.appExtId}`)) return;
+
+    if(deepLink?.includes(`${HUMAN_ID_DEEPLINK_PREFIX}${options.appExtId}`)) {
+      if(deepLink?.includes(HUMAN_ID_DEEPLINK_EXCHANGE_TOKEN_PREFIX)) {
+        const exchangeToken = deepLink?.split(HUMAN_ID_DEEPLINK_EXCHANGE_TOKEN_PREFIX)[1];
+        onSuccess(exchangeToken);
+        setTimeout(() => {
+          Toast.show(SUCCESFUL_LOGIN_MESSAGE, 6000);
+        }, 500);
+      } else if(deepLink?.includes(HUMAN_ID_DEEPLINK_ERROR_PREFIX)) {
+        const error = deepLink?.split(HUMAN_ID_DEEPLINK_ERROR_PREFIX)[1];
+        onError(error);
+        setTimeout(() => {
+          Toast.show(error, 4000);
+        }, 500)
+      } else {
+        onError('Unknown error');
+        setTimeout(() => {
+          Toast.show(UNKNOWN_ERROR_MESSAGE, 4000);
+        }, 500)
+      }
+    }
+
+    closeWebLogin();
+  }
+
   React.useImperativeHandle(ref, () => ({
     logIn: () =>
       getWebLogin({
         lang: "en",
       }),
+    handleDeepLink
   }));
 
   return (
