@@ -59,7 +59,7 @@ const MainComponent: IMainComponent = (_props, ref): React.ReactElement => {
     try {
       setWebLoginModalVisible(true);
       let baseUrl = "https://api.human-id.org/v1/";
-      let endPointUrl = "mobile/users/web-login";
+      let endPointUrl = "mobile/users/web-login?web_login_version=v2";
       const response = await fetch(baseUrl + endPointUrl, {
         method: "POST",
         headers: {
@@ -123,7 +123,7 @@ const MainComponent: IMainComponent = (_props, ref): React.ReactElement => {
   React.useImperativeHandle(ref, () => ({
     logIn: () =>
       getWebLogin({
-        lang: "en",
+        lang: "en"
       }),
     handleDeepLink
   }));
