@@ -1,3 +1,5 @@
+import React from 'react';
+
 import {FlagType} from '../modules/Login/Login.interface';
 
 export interface UseGlobalState {
@@ -16,26 +18,30 @@ export interface UseGlobalState {
   clearState: () => void;
 }
 
-import React from 'react';
 
 export interface ConfigureParams {
   clientId: string;
   clientSecret: string;
+  appExtId: string;
 }
 
 export interface Options {
   clientId: string;
   clientSecret: string;
+  appExtId: string;
 }
 
 type onCancelCallback = () => void;
 
 type onErrorCallback = () => void;
 
+type onErrorWithMessageCallback = (error: string) => void;
+
 type onSuccessCallback = (exchangeToken: string) => void;
 
 export interface MainComponentRef {
   logIn: () => void;
+  handleDeepLink: IHandleDeepLink;
 }
 
 export interface MainComponentProps {
@@ -54,6 +60,8 @@ export type IHumanIDProvider = React.FunctionComponent & {
 export type IConfigureHumanID = (options: ConfigureParams) => void;
 
 export type ILogIn = () => void;
+
+export type IHandleDeepLink = (deepLink: string, onSuccess: onSuccessCallback, onError: onErrorWithMessageCallback) => void;
 
 export type IOnCancel = (callback: onCancelCallback) => void;
 

@@ -1,6 +1,7 @@
-import { IConfigureHumanID, ILogIn, IOnCancel, IOnError, IOnSuccess, IUnsubscribeAllEventListener } from './core/core.interface';
+import { IConfigureHumanID, IHandleDeepLink, ILogIn, IOnCancel, IOnError, IOnSuccess, IUnsubscribeAllEventListener } from './core/core.interface';
 import HumanIDProvider from './core/Provider';
 declare const configureHumanID: IConfigureHumanID;
+declare const handleDeepLink: IHandleDeepLink;
 declare const logIn: ILogIn;
 declare const onCancel: IOnCancel;
 declare const onSuccess: IOnSuccess;
