@@ -1,25 +1,31 @@
+import HumanIDProvider from './core/Provider';
+import Toast from './modules/Toast'
+import options from './core/options';
+import {EventRegister, ON_CANCEL, ON_ERROR, ON_SUCCESS} from './core/eventManager';
 import {
   IConfigureHumanID,
+  IHandleDeepLink,
   ILogIn,
   IOnCancel,
   IOnError,
   IOnSuccess,
   IUnsubscribeAllEventListener
 } from './core/core.interface';
-import {EventRegister, ON_CANCEL, ON_ERROR, ON_SUCCESS} from './core/eventManager';
-import options from './core/options';
-import HumanIDProvider from './core/Provider';
-import Toast from './modules/Toast'
 
 const configureHumanID: IConfigureHumanID = (params) => {
-  const {clientId, clientSecret} = params;
+  const {clientId, clientSecret, appExtId} = params;
 
   options.clientId = clientId;
   options.clientSecret = clientSecret;
+  options.appExtId = appExtId;
 };
 
 const logIn: ILogIn = () => {
   HumanIDProvider.ref?.logIn();
+};
+
+const handleDeepLink: IHandleDeepLink = (deepLink, onSuccess, onError) => {
+  HumanIDProvider.ref?.handleDeepLink(deepLink, onSuccess, onError);
 };
 
 const onCancel: IOnCancel = (callback) => {
@@ -58,6 +64,7 @@ const unsubscribeAllEventListeners: IUnsubscribeAllEventListener = () => {
 
 export {
   configureHumanID,
+  handleDeepLink,
   logIn,
   onError,
   onSuccess,
